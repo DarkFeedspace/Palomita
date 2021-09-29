@@ -769,23 +769,23 @@ client.on('CB:action,,battery', json => {
 	╭◪ *「 📝REGISTRO📝  」*
 	╰───────────────╮
 	╭───────────────╯
-	├❏ Para se registrar :
-	├❏「📌」Basta digitar ${prefix}rg nome/idade
-	├❏ *exemplo : ${prefix}rg NOME/15*
+	├❏ Para registrar :
+	├❏「📌」Vas a poner: ${prefix}rg (Nombre)/(Edad)
+	├❏ *ejemplo : ${prefix}rg Felipe/18*
 	╰───────────────╯						
 										`,
-				success: '✔️ Deu certo ✔️',
+				success: '✔️ Funcionó ✔️',
 				error: {
-					stick: '❌ Falha, ocorreu um erro ao converter a imagem em um adesivo ❌',
+					stick: '❌ Falló, se produjo un error al convertir la imagen en una pegatina ❌',
 					Iv: '❌ Link inválido ❌'
 				},
 				only: {
-					group: '❌ Este comando só pode ser usado em grupos! ❌',
-					premium: '[❗] ESTE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
-					ownerG: '❌ Este comando só pode ser usado pelo dono! ❌',
-					ownerB: '❌ Este comando só pode ser usado pelo meu dono! ❌',
-					admin: '❌ Este comando só pode ser usado por administradores de grupo! ❌',
-					Badmin: '❌ Este comando só pode ser usado quando o bot se torna administrador! ❌'
+					group: '❌ ¡Este comando solo se puede usar en grupos! ❌',
+					premium: '[❗]ESTE PEDIDO ES SOLO PARA * USUARIOS PREMIUMS *',
+					ownerG: '❌ ¡Este comando solo puede ser utilizado por el propietario! ❌',
+					ownerB: '❌ ¡Este comando solo lo puede usar el que dono! ❌',
+					admin: '❌ ¡Este comando solo puede ser utilizado por administradores de grupo! ❌',
+					Badmin: '❌ ¡Este comando solo se puede usar cuando el niño se convierte en administrador! ❌'
 				}
 			}
 			//CONSTS DO BOT NÃO MEXA SE N SOUBER
@@ -857,13 +857,13 @@ client.on('CB:action,,battery', json => {
 if (budy.includes("https://")){
 		     if (!isGroup) return
 		     if (!isAntiLink) return
-		     if (isGroupAdmins) return reply(`*${pushname}* vc é admin por isso não vou te banir`)
+		     if (isGroupAdmins) return reply(`*${pushname}*eres administrador, así que no te prohibiré`)
 		    client.updatePresence(from, Presence.composing)
 		   var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
 		    setTimeout( () => {
 	    	reply(`*𝑒𝑙𝑖𝑚𝑖𝑛𝑎𝑑𝑜 𝑑𝑜 𝑔𝑟𝑢𝑝𝑜*`)
 	     	}, 100)
-	     	reply(`*_「 link  detectado 」_*\n*${pushname}* Vc será banido do grupo *${groupMetadata.subject}*`)
+	     	reply(`*_「 link  detectado 」_*\n*${pushname}* serás expulsado del grupo *${groupMetadata.subject}*`)
 		    setTimeout( () => {  
 		    client.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
 					}, 10)
@@ -874,13 +874,13 @@ if (budy.includes("https://")){
 if (budy.includes("wa.me")){
 		     if (!isGroup) return
 		     if (!isAntiLink) return
-		     if (isGroupAdmins) return reply(`*${pushname}* vc é admin por isso não vou te banir`)
+		     if (isGroupAdmins) return reply(`*${pushname}* eres administrador, así que no te prohibiré`)
 		    client.updatePresence(from, Presence.composing)
 		   var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
 		    setTimeout( () => {
 	    	reply(`*𝑒𝑙𝑖𝑚𝑖𝑛𝑎𝑑𝑜 𝑑𝑜 𝑔𝑟𝑢𝑝𝑜*`)
 	     	}, 100)
-	     	reply(`*_「 link  detectado 」_*\n*${pushname}* Vc será banido do grupo *${groupMetadata.subject}*`)
+	     	reply(`*_「 link  detectado 」_*\n*${pushname}* serás expulsado del grupo por gil *${groupMetadata.subject}*`)
 		    setTimeout( () => {  
 		    client.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
 					}, 10)
@@ -891,13 +891,13 @@ if (budy.includes("wa.me")){
 		if (budy.includes("Wa.me")){
 		     if (!isGroup) return
 		     if (!isAntiLink) return
-		     if (isGroupAdmins) return reply(`*${pushname}* vc é admin por isso não vou te banir`)
+		     if (isGroupAdmins) return reply(`*${pushname}* eres administrador, así que no te prohibiré`)
 		    client.updatePresence(from, Presence.composing)
 		   var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
 		    setTimeout( () => {
 	    	reply(`*𝑒𝑙𝑖𝑚𝑖𝑛𝑎𝑑𝑜 𝑑𝑜 𝑔𝑟𝑢𝑝𝑜*`)
 	     	}, 100)
-	     	reply(`*_「 link  detectado 」_*\n*${pushname}* Vc será banido do grupo *${groupMetadata.subject}*`)
+	     	reply(`*_「 link  detectado 」_*\n*${pushname}* serás expulsado del grupo *${groupMetadata.subject}*`)
 		    setTimeout( () => {  
 		    client.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
 					}, 10)
@@ -908,13 +908,13 @@ if (budy.includes("wa.me")){
 if (budy.includes("http://")){
 		     if (!isGroup) return
 		     if (!isAntiLink) return
-		     if (isGroupAdmins) return reply(`*${pushname}* vc é admin por isso não vou te banir`)
+		     if (isGroupAdmins) return reply(`*${pushname}* eres administrador, así que no te prohibiré`)
 		    client.updatePresence(from, Presence.composing)
 		   var Kick = `${sender.split("@")[0]}@s.whatsapp.net`
 		    setTimeout( () => {
 	    	reply(`*𝑒𝑙𝑖𝑚𝑖𝑛𝑎𝑑𝑜 𝑑𝑜 𝑔𝑟𝑢𝑝𝑜*`)
 	     	}, 100)
-	     	reply(`*_「 link  detectado 」_*\n*${pushname}* Vc será banido do grupo *${groupMetadata.subject}*`)
+	     	reply(`*_「 link  detectado 」_*\n*${pushname}* serás expulsado del grupo *${groupMetadata.subject}*`)
 		    setTimeout( () => {  
 		    client.groupRemove(from, [Kick]).catch((e) => {reply(`*ERROR:* ${e}`)}) 
 					}, 10)
