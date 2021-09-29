@@ -764,7 +764,7 @@ client.on('CB:action,,battery', json => {
 			
 			//MENSAGENS SETADAS
 			mess = {
-				wait: 'Estou fazendo ⌛',
+				wait: 'espera gil',
 				registro: `
 	╭◪ *「 📝REGISTRO📝  」*
 	╰───────────────╮
